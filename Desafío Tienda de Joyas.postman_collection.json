@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "5025627c-c19e-480c-9848-6a8b7099f344",
+		"name": "Desafío Tienda de Joyas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10869783"
+	},
+	"item": [
+		{
+			"name": "Joyas v1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/joyas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"joyas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joyas v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewels",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joyas Paginación",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewels?page=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewels"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joyas Ordenamiento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewels?values=desc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewels"
+					],
+					"query": [
+						{
+							"key": "values",
+							"value": "desc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joyas Categoría",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewels/collar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewels",
+						"collar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joya Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joya Campos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewel/1?fields=name,category,value",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewel",
+						"1"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "name,category,value"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Joya Error",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v2/jewel/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v2",
+						"jewel",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
